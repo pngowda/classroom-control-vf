@@ -38,7 +38,7 @@ ini_setting { 'random ordering':
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 file { 'etc/test':
-  ensure => 'file',
+  ensure => file,
   mode => '0664',
   owner => 'root',
   content => "test file\n",
