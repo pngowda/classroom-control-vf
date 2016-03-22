@@ -1,3 +1,5 @@
-class users {'prajwaln22'
+class users {
+ user{'prajwaln22':
   ensure => present,
+ }
 }
