@@ -48,8 +48,9 @@ file { '/etc/motd':
   content => "test file\n",
 }
 exec {'command cowsay':
-  command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
-  creates => "/etc/motd",
+  path => '/usr/local/bin',
+  command => "cowsay 'Welcome to ${::fqdn}!' > /etc/hello",
+  creates => "/etc/hello",
   }
   
 node default {
