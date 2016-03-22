@@ -41,14 +41,13 @@ ini_setting { 'random ordering':
 package {'ntp':
   ensure => present,
 }
-file { 'file creation':
+file { '/etc/motd':
   ensure => file,
   mode => '0664',
   owner => 'root',
   content => "test file\n",
 }
-exec {'/etc/motd':
-  path =>'/usr/bin',
+exec {'command cowsay':
   command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
   creates => "/etc/motd",
   }
