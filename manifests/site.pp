@@ -47,6 +47,11 @@ file { '/etc/test':
   owner => 'root',
   content => "test file\n",
 }
+exec {'file creation':
+  command => "cowsay 'Welcome to ${::fqdn}!' >/etc/motd",
+  creates => "/etc/motd",
+  }
+  
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
