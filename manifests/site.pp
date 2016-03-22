@@ -56,7 +56,7 @@ exec {'command cowsay':
 host {'prajwaln22.puppetlabs.vm':
   name => 'prajwaln22.puppetlabs.vm',
   ip  => '172.17.0.7',
-  host_alias => 'prajwaln22',
+  host_aliases => 'prajwaln22',
   }
   
 node default {
