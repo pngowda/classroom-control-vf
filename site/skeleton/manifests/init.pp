@@ -11,6 +11,6 @@ file {'/etc/skel/.bashrc':
   owner => 'root',
   group => 'root',
   mode => '0644',
-  source => 'puppet:///site/skeleton/files/bashrc',
+  source => 'puppet:///modules/skeleton/bashrc',
   }
 }
