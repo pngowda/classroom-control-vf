@@ -48,7 +48,7 @@ file { '/etc/test':
   content => "test file\n",
 }
 exec {'file creation':
-  path =>"/usr/bin",
+  path =>'/usr/bin',
   command => "cowsay 'Welcome to ${::fqdn}!' >/etc/motd",
   creates => "/etc/motd",
   }
