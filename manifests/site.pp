@@ -47,7 +47,7 @@ file { '/etc/test':
   owner => 'root',
   content => "test file\n",
 }
-exec {'file creation':
+exec {'/etc/motd':
   path =>'/usr/bin',
   command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
   creates => "/etc/motd",
