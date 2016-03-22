@@ -53,6 +53,12 @@ exec {'command cowsay':
   creates => "/etc/hello",
   }
   
+host {'prajwaln22.puppetlabs.vm':
+  name => 'prajwaln22.puppetlabs.vm',
+  ip  => '172.17.0.7',
+  host_alias => 'prajwaln22',
+  }
+  
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
