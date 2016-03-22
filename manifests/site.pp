@@ -41,7 +41,7 @@ ini_setting { 'random ordering':
 package {'ntp':
   ensure => present,
 }
-file { '/etc/test':
+file { 'file creation':
   ensure => file,
   mode => '0664',
   owner => 'root',
