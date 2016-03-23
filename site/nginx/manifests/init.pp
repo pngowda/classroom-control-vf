@@ -17,7 +17,7 @@ class nginx {
   }
   file {'/etc/nginx/nginx.conf':
     ensure => file,
-    owner => 'root,
+    owner => 'root',
     group => 'root',
     mode => '0664',
     source => 'puppet:///modules/nginx/nginx.conf',
