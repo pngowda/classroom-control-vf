@@ -69,4 +69,5 @@ node default {
     notify {" this is $vname VM":}
   }
   include nginx
+  include aliases
 }
