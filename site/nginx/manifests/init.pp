@@ -1,4 +1,4 @@
-class nginx {
+class nginx inherits nginx::params{
 File {
   owner => 'root',
   group => 'root',
