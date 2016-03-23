@@ -12,7 +12,7 @@ File {
   }
   file {'/var/www/index.html':
     ensure => file,
-    source => ${nginx::index_html_source},
+    source => 'puppet:///modules/nginx/index.html',
   }
   file {'/etc/nginx/nginx.conf':
     ensure => file,
