@@ -1,8 +1,8 @@
-define users::managed_users{ 
+define users::managed_users { 
   user { $title:
    ensure => present,
   }
-  file { "/home/$tittle":
+  file { "/home/$title":
     ensure => directory,
     owner => $tittle,
     group => $group,
