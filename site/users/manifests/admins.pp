@@ -4,3 +4,4 @@ users::managed_users{"kriss":}
 users::managed_users{"harry":
   group => admin,
 }
+}
