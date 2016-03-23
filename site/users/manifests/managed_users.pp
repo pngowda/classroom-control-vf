@@ -7,7 +7,7 @@ define users::managed_users(
   file { "/home/$tittle":
     ensure => directory,
     owner => $tittle,
-    group => $group
+    group => $group,
   }
 }
 
