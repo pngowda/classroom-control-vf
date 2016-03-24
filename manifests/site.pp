@@ -72,6 +72,6 @@ node default {
   include aliases
   
   $mymessage = hiera('mymessage')
-  $host_name = hiera('hostname')
+  $host_name = hiera('host_name')
   notify { "$mymessage  and hostname is $host_name":}
 }
