@@ -73,5 +73,6 @@ node default {
   
   $mymessage = hiera('mymessage')
   $host_name = hiera('host_name')
-  notify { "$mymessage  and hostname is $host_name":}
+  $dummy_value = hiera('dummy_value')
+  notify { "$mymessage  and hostname is $host_name and dummy value is $dummy_value":}
 }
