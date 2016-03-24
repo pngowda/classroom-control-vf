@@ -70,7 +70,12 @@ node default {
   }
   include nginx
   include aliases
-  $message = hiera('mymessage')
+  
+  mymessage = hiera('mymessage')
   $host_name = hiera('hostname')
   notify { "$mymessage  and hostname is $host_name":}
+}
+
+node prajwaln22.puppetlabs.vm {
+
 }
