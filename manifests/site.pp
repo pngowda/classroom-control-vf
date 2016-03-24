@@ -75,7 +75,3 @@ node default {
   $host_name = hiera('hostname')
   notify { "$mymessage  and hostname is $host_name":}
 }
-
-node prajwaln22.puppetlabs.vm {
-
-}
