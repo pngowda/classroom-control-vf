@@ -70,4 +70,6 @@ node default {
   }
   include nginx
   include aliases
+  $message = hiera('message')
+  notify { $message:}
 }
